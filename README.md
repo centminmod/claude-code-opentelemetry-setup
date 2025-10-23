@@ -421,3 +421,11 @@ Break down the structure of a LogQL query.
 ![MCP Inspector](screenshots/claude-code-opentelemetry-mcp-server-inspector-tests-8.png)
 
 ![MCP Inspector](screenshots/claude-code-opentelemetry-mcp-server-inspector-tests-9.png)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=centminmod/claude-code-opentelemetry-setup&type=date&legend=top-left)](https://www.star-history.com/#centminmod/claude-code-opentelemetry-setup&type=date&legend=top-left)
+
+---
+
+![Alt](https://repobeats.axiom.co/api/embed/d6ceab9f7729d7422c4e0079c5cfcd80a1878934.svg "Repobeats analytics image")
