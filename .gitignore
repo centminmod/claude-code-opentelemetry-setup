@@ -1,0 +1,58 @@
+# Docker volumes (persistent data)
+prometheus-data/
+grafana-data/
+loki-data/
+
+# Logs
+*.log
+logs/
+*.out
+nohup.out
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Backup files
+*.bak
+*.backup
+backups/
+*.tar.gz
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.pid
+
+# Docker override files (for local development)
+docker-compose.override.yml
+docker-compose.*.yml
+!docker-compose.yml
+
+# Grafana specific
+*.db
+*.sqlite
+
+# Python cache (for any scripts)
+__pycache__/
+*.py[cod]
+*$py.class
