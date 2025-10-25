@@ -8,6 +8,44 @@ An accompanying Claude Code usage metrics MCP server allows Claude Code access t
 
 ---
 
+## Cache Performance Optimization
+
+Effective prompt caching can reduce your Claude Code costs by up to **90%**. This setup helps you monitor and optimize cache performance in real-time.
+
+### Quick Cache Insights
+
+**Example Performance Metrics:**
+- **Cache Hit Rate:** 93.53% (40.28M cached reads vs 2.49M cache creation)
+- **Cost Savings:** ~80% reduction ($129/day → $27/day)
+- **Cache ROI:** 16.2:1 (savings vs cache creation cost)
+
+### Key Optimization Strategies
+
+1. **Stable Context First** - Place large, unchanging context at the beginning of prompts
+2. **Long Sessions** - Group related tasks to leverage warm cache (5-minute TTL)
+3. **Batch Operations** - Process similar tasks together to maximize cache reuse
+4. **Monitor Efficiency** - Track cache hit rate via Grafana dashboards and MCP server
+
+### Cache Monitoring Dashboard Panels
+
+This setup includes pre-built panels for:
+- **Cache Hit Rate %** - Real-time cache efficiency gauge
+- **Cached Write Cost (24h)** - Cost savings from cache reuse
+- **Token Usage by Type** - Breakdown of cache reads vs creation
+- **Cache Efficiency Trend** - Historical cache performance
+
+### Target Performance Goals
+
+| Metric | Target | Current Example | Status |
+|--------|--------|-----------------|--------|
+| Cache Hit Rate | > 90% | 93.53% | ✅ Excellent |
+| Cache ROI | > 10:1 | 16.2:1 | ✅ Excellent |
+| Daily Cost Efficiency | > 75% savings | ~80% | ✅ Excellent |
+
+For detailed optimization strategies, cost analysis, and advanced techniques, see [CACHE_OPTIMIZATION.md](CACHE_OPTIMIZATION.md).
+
+---
+
 ## Grafana Dashboards
 
 ![Claude Code Monitoring](screenshots/claude-code-opentelemetry-grafana-prometheus-loki-1.png)
